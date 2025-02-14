@@ -31,6 +31,22 @@
             margin-bottom: 10px;
         }
 
+        .categories {
+            margin: 20px auto;
+            text-align: center;
+        }
+
+        .categories a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2em;
+            background: rgba(255, 255, 255, 0.3);
+            padding: 8px 15px;
+            border-radius: 5px;
+            margin: 5px;
+            display: inline-block;
+        }
+
         .blog-posts {
             max-width: 800px;
             margin: 20px auto;
@@ -49,6 +65,12 @@
             color: #ffd700;
         }
 
+        .post img {
+            max-width: 100%;
+            border-radius: 10px;
+            margin-top: 10px;
+        }
+
         .post p {
             font-size: 1.1em;
         }
@@ -65,23 +87,45 @@
         <h1>Welcome to BL Jat's Blog</h1>
         <p>Sharing thoughts, ideas, and experiences!</p>
 
+        <!-- Blog Categories -->
+        <div class="categories">
+            <a href="#">Technology</a>
+            <a href="#">Science</a>
+            <a href="#">Personal</a>
+            <a href="#">Travel</a>
+        </div>
+
+        <!-- Blog Posts -->
         <div class="blog-posts">
             <div class="post">
-                <h2>First Blog Post</h2>
-                <p>Hello Everyone
-                I'm a Research scholar. My Research area is Fluid Dynamics.</p>
+                <h2>My First Blog Post</h2>
+                <img src="https://via.placeholder.com/750x300" alt="Sample Image">
+                <p>This is my first blog post. I'm excited to share my thoughts with you!</p>
             </div>
 
             <div class="post">
-                <h2>Post2</h2>
-                <p>Hello
-                I will be happy to share ideas about research in Fluid Dynamics</p>
+                <h2>Exploring the Future of Technology</h2>
+                <img src="https://via.placeholder.com/750x300" alt="Technology Image">
+                <p>Technology is evolving rapidly. Let’s explore the latest trends in AI and innovation.</p>
             </div>
         </div>
+
+        <!-- Disqus Comment Section -->
+        <div id="disqus_thread"></div>
+        <script>
+            (function() { 
+                var d = document, s = d.createElement('script');
+                s.src = 'https://YOUR-DISQUS-SHORTNAME.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+
     </div>
 
     <div class="footer">
-        <p>© 2025 BL Jat | <a href="#">Contact</a></p>
+        <p>© 2025 JATRANA | <a href="#">Contact</a></p>
     </div>
 
 </body>
